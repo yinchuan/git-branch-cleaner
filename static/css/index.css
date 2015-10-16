@@ -1,0 +1,105 @@
+.container {
+    max-width: 600px;
+    min-width: 560px;
+}
+.container div{
+    /*border: 1px solid black;*/
+}
+
+.page-header {
+    text-align: center;
+}
+.remote {
+    color: #00b3ee;
+}
+
+.deleted {
+    text-decoration: line-through;
+}
+
+.currentBranch {
+    color: #9d9d9d;
+}
+
+.currentBranch input {
+    display: none;
+}
+
+.select-dir-container input {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 0 3em 0;
+}
+
+/*for drag & drop select git repo*/
+.box {
+    background-color: #dfc8ca;
+    max-height: 300px;
+    height: 100vh;
+    position: relative;
+}
+
+.box__dragndrop {
+    display: none;
+}
+
+.box.has_advanced_select {
+    background-color: white;
+    outline: 2px dashed black;
+    outline-offset: -10px;
+}
+
+.box.has_advanced_select .box__dragndrop {
+    display: inline;
+}
+
+.box.is-dragover {
+    background-color: grey;
+}
+
+.box label {
+    /*max-width: 90%;*/
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #f1e5e6;
+    background-color: #d3394c;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+
+}
+
+.box:focus label,
+.box.has-focus label,
+.box label:hover {
+    outline: 1px dotted #000;
+    /*outline: -webkit-focus-ring-color auto 5px;*/
+    background-color: #722040;
+}
+
+.box label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}

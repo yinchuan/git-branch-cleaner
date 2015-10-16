@@ -1,0 +1,30 @@
+{
+  "name": "git-branch-cleaner",
+  "version": "0.0.1",
+  "description": "Clear Mass Git Branch quickly",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinchuan/git-branch-cleaner.git"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "yinchuan",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/yinchuan/git-branch-cleaner/issues"
+  },
+  "homepage": "https://github.com/yinchuan/git-branch-cleaner",
+  "devDependencies": {
+    "electron-prebuilt": "^0.34.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.0.0"
+  }
+}
